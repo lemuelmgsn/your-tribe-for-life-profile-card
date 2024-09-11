@@ -1,5 +1,7 @@
 <script>
     export let data
+
+    let imagePath = "/images/gundam.visitekaartje.jpg"; // Relatieve pad naar afbeelding
 </script>
 
 <body>
@@ -11,9 +13,9 @@
         </div>
 
         <div class="img-container">
-            <div class="images">1</div>
-            <div class="images">1</div>
-            <div class="images">1</div>
+            <img src='/images/gundam.visitekaartje.jpg' alt="afbeelding" class="images"/>
+            <img src='/images/schoenen.visitekaartje.jpg' alt="afbeelding" class="images"/>
+            <img src='/images/kleding.visitekaartje.jpg' alt="afbeelding" class="images"/>
         </div>
 
         <div class="info">
@@ -37,6 +39,8 @@
 
 <p> {data.naam} </p>
 
+
+
 <style>
 
 *{
@@ -52,6 +56,7 @@ section{
     border: 5px solid lightgrey;
     border-radius: 8px;
     margin: auto;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(105, 105, 105, 0.19);
 }
 .top-card{
     display: flex;
@@ -71,7 +76,7 @@ section{
 .img-container{
     display: flex;
     flex-direction: column;
-    height: 550px;
+    /* height: 550px; */
     width: 95%;
     border-radius: 8px;
     align-items: center;
