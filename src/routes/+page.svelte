@@ -8,8 +8,8 @@
 <main>
     <section>
         <div class="top-card">
-            <h1>Lemuel</h1>
-            <a href="https://github.com/lemuelmgsn">github icon</a>
+            <h1>{data.person.name}</h1>
+            <a href="{data.person.github_handle}">github icon</a>
         </div>
 
         <div class="img-container">
@@ -19,7 +19,7 @@
         </div>
 
         <div class="info">
-            <h2>*frontend design & development*</h2>
+            <h2>{data.person.bio}</h2>
             <ul>
                 <li>Text</li>
                 <li>Text</li>
@@ -35,9 +35,6 @@
     </section>
 </main>
 </body>
-
-
-<p> {data.naam} </p>
 
 
 

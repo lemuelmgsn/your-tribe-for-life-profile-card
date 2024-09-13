@@ -6,6 +6,6 @@ export async function load() {
   const persons = await fetchJson(url)
 
   return {
-    persons: persons.data
+    person: persons.data
   }                                                                               
 }
