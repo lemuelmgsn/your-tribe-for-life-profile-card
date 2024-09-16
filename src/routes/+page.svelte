@@ -9,7 +9,7 @@
     <section>
         <div class="top-card">
             <h1>{data.person.name}</h1>
-            <a href="{data.person.github_handle}">github icon</a>
+            <a href="{data.person.github_handle}"> <img src= "{data.person.avatar}" class="github-link" alt="profile picture"></a>
         </div>
 
         <div class="img-container">
@@ -43,8 +43,12 @@
 *{
     font-family: sans-serif;
 }
+body{
+    background-color: black;
+}
 
 section{
+    background-color: white;
     display: flex;
     flex-direction: column;
     max-width: 800px;
@@ -69,6 +73,11 @@ section{
 .top-card > h1{
     padding-left: 20px;
     color: #4b4b4b;
+}
+img{
+    height: 2em;
+    width: 2em;
+    border-radius: 1em;
 }
 .img-container{
     display: flex;
