@@ -1,38 +1,22 @@
-# create-svelte
+# Visitekaartje S3
+Mijn visitekaartje voor semester 3!
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Bschrijving
 
-## Creating a project
+Een simpel design voor mijn visitekaartje.
 
-If you're seeing this, you've probably already done this step. Congrats!
+![image](https://github.com/user-attachments/assets/0dae5a92-8773-49ae-b4ff-99e7c595ae56)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Live link: https://your-tribe-for-life-profile-card-eight.vercel.app/
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Kenmerken
 
-## Developing
+Dit project is gemaakt met: SvelteKit, HTML, CSS en Directus
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Installatie
+ 1. open de terminal en installeer npm met `npm install`
+ 2. als npm is geinstalleerd kan je het runnen op localhost met `npm run dev`
 
-```bash
-npm run dev
+## Bronnen
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+https://kit.svelte.dev/docs/creating-a-project
