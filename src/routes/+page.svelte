@@ -12,14 +12,29 @@
 
         <section class="top-card">
             <h1>{data.person.name} {data.person.surname}</h1>
-            <a href="{data.person.github_handle}"> <img src= "{data.person.avatar}" class="github-link" alt="profile picture"></a>
+            <a href="{data.person.github_handle}"> <img src= "{data.person.avatar}" class="pf-img" alt="profile picture"></a>
         </section>
 
         <div class="img-container">
-            <img src='/images/gundam.visitekaartje.jpg' alt="afbeelding" class="images"/>
-            <img src='/images/schoenen.visitekaartje.jpg' alt="afbeelding" class="images"/>
-            <img src='/images/kleding.visitekaartje.jpg' alt="afbeelding" class="images"/>
+            <picture>
+                <source srcset="/images/gundam.visitekaartje.jpg?format=avif" type="image/avif">
+                <source srcset="/images/gundam.visitekaartje.jpg?format=webp" type="image/webp">
+                <img src="/images/gundam.visitekaartje.jpg" alt="afbeelding" loading="lazy" width= auto height= auto>
+            </picture>
+            <picture>
+                <source srcset="/images/schoenen.visitekaartje.jpg?format=avif" type="image/avif">
+                <source srcset="/images/schoenen.visitekaartje.jpg?format=webp" type="image/webp">
+                <img src="/images/schoenen.visitekaartje.jpg" alt="afbeelding" loading="lazy" width= auto height= auto>
+            </picture>
+            <picture>
+                <source srcset="/images/kleding.visitekaartje.jpg?format=avif" type="image/avif">
+                <source srcset="/images/kleding.visitekaartje.jpg?format=webp" type="image/webp">
+                <img src="/images/kleding.visitekaartje.jpg" alt="afbeelding" loading="lazy" width= auto height= auto>
+            </picture>
         </div>
+
+
+
 
         <section class="info">
             <h2>{data.person.bio}</h2>
@@ -96,7 +111,7 @@ article{
     padding-left: 20px;
     font-size: 1.5em;
 }
-img{
+.pf-img{
     height: 2em;
     width: 2em;
     border-radius: 1em;
@@ -109,12 +124,15 @@ img{
     align-items: center;
     border: 5px solid rgb(39, 39, 39);
 }
-.images{
-    width: 50%;
+picture{
+    width: 100%;
     height: 80%;
     background-color: grey;
-    margin: 10px;
+    margin: 30px 10px;
     aspect-ratio: 1 / 1;
+}
+img{
+    width: 100%;
 }
 .info{
     margin-right: auto;
@@ -146,7 +164,6 @@ a:hover{
 @media (min-width: 690px) {
     .img-container {
         flex-direction: row;
-        height: 300px;
     }
     .images{
         width: 100%;
