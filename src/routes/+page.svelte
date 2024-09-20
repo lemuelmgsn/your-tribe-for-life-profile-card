@@ -1,3 +1,5 @@
+<title>Visitekaartje</title>
+
 <script>
     export let data
 
@@ -65,6 +67,9 @@ h1, h2, h3, a, .info{
     justify-self: left;
     list-style-type: square;
 }
+.lijsten > ul > li{
+    margin: 1em;
+}
 article{
     background-color: black;
     display: flex;
@@ -130,6 +135,7 @@ img{
     align-self: end;
 }
 a{
+    padding: 5px;
     box-shadow: inset 0 0 0 0 grey;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
